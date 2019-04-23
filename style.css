@@ -1,0 +1,173 @@
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 30px;
+  font-family: 'Roboto', sans-serif;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  #container {
+    flex-direction: row;
+    align-items: start;
+    margin-top: 40px;
+  }
+
+  .border-wrap-bio {
+    flex-basis: 25%;
+    flex-shrink: 0;
+  }
+
+  .border-wrap-content {
+    flex-basis: 70%;
+    flex-shrink: 0;
+  }
+
+  .project {
+    flex-direction: row;
+  }
+}
+
+.border-wrap-bio {
+  border-radius: 5px;
+  background: linear-gradient(to left, red, orange);
+  padding: 2px;
+  margin: 10px;
+}
+
+.border-wrap-content {
+  border-radius: 5px;
+  background: linear-gradient(to left, purple, red);
+  padding: 2px;
+  margin: 10px;
+}
+
+.bio {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+  font-size: 12pt;
+}
+
+h1 {
+  font-size: 28pt;
+  margin: 5px 0px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h2 {
+  font-size: 20pt;
+  margin: 5px 0px;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 0, 0, 0.4), rgba(128, 0, 128, 0.9), rgba(255, 0, 0, 0.4), rgba(0, 0, 0, 0));
+}
+
+.content {
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+  font-size: 12pt;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+nav li {
+  display: inline;
+  margin: 0px 10px 0px 0px;
+}
+
+a {
+  color: red;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a {
+  transition: 0.4s;
+}
+
+.current-link {
+  pointer-events: none;
+  font-size: 14pt;
+  text-decoration: underline;
+}
+
+nav a:hover {
+  font-size: 14pt;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.bio img {
+  height: 30px;
+  width: 30px;
+}
+
+.project {
+  display: flex;
+  margin: 0;
+  font-size: 16px;
+  flex-direction: column;
+}
+
+.screenshot img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+p {
+  text-align: justify;
+}
+
+.project-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-title {
+  text-align: left;
+}
+
+.project-title h3 {
+  font-family: 'Merriweather', serif;
+  font-size: 18pt;
+  margin: 0 0 3px 0;
+}
+
+.project-title a:hover {
+  text-decoration: underline;
+}
+
+.technologies img {
+  height: 30px;
+  width: 30px;
+}
+
+.hidden {
+  display: none;
+}

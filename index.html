@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Brian Alzua</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="border-wrap-bio">
+        <div class="bio">
+          <h1>Brian Alzua</h1><hr />
+          <p>I'm a full-stack developer based in the Minneapolis, MN area, and a recent graduate of the Full Stack Web Development Bootcamp at Thinkful. I really enjoy problem solving and the particular kind of analytical thinking required to overcome challenges in web development. I'm always interested in learning about new libraries and frameworks both for front-end and back-end applications.</p>
+          <p> I'm currently looking for opportunities, and can be contacted through any of the methods below:</p>
+          <nav>
+            <ul>
+              <li><a href="javascript:showProjects()" class="projectsLink">Projects</a></li>
+              <li><a href="javascript:showAbout()" class="aboutLink">About</a></li>
+            </ul>
+          </nav>
+          <a href="mailto:balzua@gmail.com" target="_blank">
+            <img src="assets/email.png" title="Email" alt="Email" />
+          </a>
+          <a href="https://www.github.com/balzua" target="_blank">
+            <img src="assets/GitHub-Mark-64px.png" title="GitHub" alt="GitHub" />
+          </a>
+          <a href="https://www.linkedin.com/in/brian-alzua-2a2774bb/" target="_blank">
+            <img src="assets/linked-in.png" title="LinkedIn" alt="LinkedIn" />
+          </a>
+        </div>
+      </div>
+      <div class="border-wrap-content">
+        <div class="content"><h2>Projects</h2><nav>
+            <ul>
+              <li><a href="javascript:selectProject(0)" class="current-link">Game Deck</a></li>
+              <li><a href="javascript:selectProject(1)">Travelogue</a></li>
+              <li><a href="javascript:selectProject(2)">What to Watch</a></li>
+            </ul>
+          </nav><hr>
+          <div class="project">
+            <div class="project-info">
+              <div class="project-heading">
+                <div class="project-title">
+                  <h3>Game Deck</h3>
+                  <a href="https://vast-shore-71046.herokuapp.com/" class="demoLink" target="_blank">Demo</a> / 
+                  <a href="https://github.com/balzua/game-deck" class="githubLink" target="_blank">Github</a>
+                </div>
+                <div class="technologies"><img src="assets/html5.svg" alt="html5" '="" title="html5"><img src="assets/css3.svg" alt="css3" '="" title="css3"><img src="assets/node.svg" alt="node" '="" title="node"><img src="assets/react.svg" alt="react" '="" title="react"><img src="assets/redux.svg" alt="redux" '="" title="redux"><img src="assets/mongodb.svg" alt="mongodb" '="" title="mongodb"><img src="assets/heroku.svg" alt="heroku" '="" title="heroku"></div>
+              </div>
+              <p>This is a MERN stack application that allows a user to track their video game collection. Users can add games by searching a third-party API, then rate them from 1-5 stars and assign them to categories such as 'Wishlist' or 'Currently Playing'. They can also sort their collection, filter by video game platform, and see their taste in genres at a glance.</p>
+            </div>
+            <div class="screenshot"><img src="assets/game-deck.png" alt="Game Deck screenshot"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
